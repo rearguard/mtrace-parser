@@ -40,6 +40,7 @@ def parse(ifile, ofile):
             tofile.write(oline)
     oline='<%6d<%8d' % (allocmax, usedmax)
     print oline
+    tofile.write(oline)
     fromfile.close()
     tofile.close()                                 
                                  
