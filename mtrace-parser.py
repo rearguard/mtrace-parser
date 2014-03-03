@@ -38,7 +38,7 @@ def parse(ifile, ofile):
                 sys.exit(2)
             print oline    
             tofile.write(oline)
-    oline='<%6d<%8d' % (allocmax, usedmax)
+    oline='max single alloc size=%6d < max total alloced size reached during process<%8d' % (allocmax, usedmax)
     print oline
     tofile.write(oline)
     fromfile.close()
